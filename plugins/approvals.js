@@ -141,7 +141,7 @@ module.exports = {
 				pendingApprovals.set(this.room, data);
 
 				ChatHandler.send(this.room, `${this.username} wishes to have a link approved!`);
-				ChatHandler.send(this.room, `/addrankhtmlbox %, ${this.username} wishes to get approval to post '<a href="${url}">${url}</a>' in the room${description ? ` (<i>${description}</i>)` : ''}.<br/> <button class="button" name="send" value="/pm ${Config.username}, .approve ${this.room}">Approve</button>&nbsp;<button class="button" name="send" value="/pm ${Config.username}, .reject ${this.room}">Reject</button>`);
+				ChatHandler.send(this.room, `/addrankhtmlbox %, ${this.username} wishes to get approval to post '<a href="${url}">${url}</a>' in the room${description ? ` (<i>${description}</i>)` : ''}.<br> <button class="button" name="send" value="/pm ${Config.username}, .approve ${this.room}">Approve</button>&nbsp;<button class="button" name="send" value="/pm ${Config.username}, .reject ${this.room}">Reject</button>`);
 			},
 		},
 		approve: {
